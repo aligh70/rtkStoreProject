@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 
 import Card from "../componenets/Card";
 import Loader from "../componenets/Loader";
-import { useProducts } from "../context/ProductsContext";
+// import { useProducts } from "../context/ProductsContext";
 import styles from "./ProductsPage.module.css";
 import {
   filterProducts,
@@ -14,7 +14,8 @@ import SearchBox from "../componenets/SearchBox";
 import Sidebar from "../componenets/Sidebar";
 
 function ProductsPage() {
-  const products = useProducts();
+  // const products = useProducts();
+  const products = [];
   const [displayed, setDisplayed] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState({});

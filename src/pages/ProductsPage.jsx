@@ -18,7 +18,6 @@ function ProductsPage() {
   const dispatch = useDispatch();
   const state = useSelector((store) => store.product);
   const { products, loading } = state;
-  console.log(state);
   const [displayed, setDisplayed] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState({});
